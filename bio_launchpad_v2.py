@@ -37,16 +37,6 @@ a {
     background-color: #fffcf2 !important;
 }
 </style>
-
-<script>
-// To break out of iframe and access the parent window
-const streamlitDoc = window.parent.document;
-
-// Make the replacement
-document.addEventListener("DOMContentLoaded", function(event){
-        streamlitDoc.querySelector("._container_gzau3_1")[0].innerHTML = "Provided by <a href='https://bigpharm.ai' target='_blank' class='css-z3au9t egzxvld2'>Big Pharmai</a>";
-    });
-</script>
 """
 
 # Inject custom CSS for a dark theme.
@@ -84,6 +74,18 @@ a {
 """
 st.markdown(light_theme_css, unsafe_allow_html=True)
 
+remove_streamlit = """
+<script>
+// To break out of iframe and access the parent window
+const streamlitDoc = window.parent.document;
+
+// Make the replacement
+document.addEventListener("DOMContentLoaded", function(event){
+        streamlitDoc.querySelector("._container_gzau3_1")[0].innerHTML = "Provided by <a href='https://bigpharm.ai' target='_blank' class='css-z3au9t egzxvld2'>Big Pharmai</a>";
+    });
+</script>
+"""
+st.html(remove_streamlit)
 # Title and Introduction and Logo image
 image = Image.open("assets/big-pharmai-logo.png")
 st.image(image)
