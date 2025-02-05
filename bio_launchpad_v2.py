@@ -6,6 +6,8 @@ st.set_page_config(page_title="Bio Agent Launchpad", layout="wide", initial_side
 
 light_theme_css = """
 <style>
+#MainMenu{visibility:hidden;}
+footer{visibility:hidden;}
 /* Overall background and text color */
 .stApp {
     background-color: #fffcf2;
