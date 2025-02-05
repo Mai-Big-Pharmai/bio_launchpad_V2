@@ -71,7 +71,7 @@ a {
 st.markdown(light_theme_css, unsafe_allow_html=True)
 
 # Title and Introduction
-st.image("./assets/big-pharmai-logo.png", caption="Mai Big Pharmai")
+st.image("assets/big-pharmai-logo.png", caption="Mai Big Pharmai")
 st.title("BADDIE Agent Resource Hub")
 st.markdown("### The De Facto Agent Framework for Biology")
 st.write("""
