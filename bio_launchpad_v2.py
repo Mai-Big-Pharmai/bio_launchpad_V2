@@ -95,7 +95,7 @@ st.markdown(light_theme_css, unsafe_allow_html=True)
 
 # Title and Introduction and Logo image
 image = Image.open("assets/big-pharmai-logo.png")
-resized_image = image.resize((300,300))
+resized_image = image.resize((600,300))
 st.image(resized_image)
 st.title("BADDIE Agent Resource Hub")
 st.markdown("### The De Facto Agent Framework for Biology")
