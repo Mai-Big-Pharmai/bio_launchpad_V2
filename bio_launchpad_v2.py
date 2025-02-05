@@ -8,7 +8,7 @@ light_theme_css = """
 <style>
 /* Overall background and text color */
 .stApp {
-    background-color: #efefef;
+    background-color: #fffcf2;
     color: #121212;
 }
 
@@ -29,7 +29,7 @@ a {
 
 /* Ensure sidebar and other elements follow the dark theme */
 .css-1d391kg, .css-18e3th9 {
-    background-color: #efefef !important;
+    background-color: #fffcf2 !important;
 }
 </style>
 """
