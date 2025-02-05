@@ -8,6 +8,7 @@ light_theme_css = """
 <style>
 header{visibility:hidden;}
 ._terminalButton_rix23_138{visibility:hidden;}
+
 /* Overall background and text color */
 .stApp {
     background-color: #fffcf2;
@@ -39,6 +40,9 @@ a {
 # Inject custom CSS for a dark theme.
 dark_theme_css = """
 <style>
+header{visibility:hidden;}
+._terminalButton_rix23_138{visibility:hidden;}
+
 /* Overall background and text color */
 .stApp {
     background-color: #121212;
