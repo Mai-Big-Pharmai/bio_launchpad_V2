@@ -36,6 +36,7 @@ a {
 st.markdown(dark_theme_css, unsafe_allow_html=True)
 
 # Title and Introduction
+st.image("https://pbs.twimg.com/profile_images/1879918891008212992/xpHSEiro_400x400.jpg", caption="Mai Big Pharmai")
 st.title("BADDIE Agent Resource Hub")
 st.markdown("### The De Facto Agent Framework for Biology")
 st.write("""
