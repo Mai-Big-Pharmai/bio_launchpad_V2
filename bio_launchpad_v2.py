@@ -8,6 +8,7 @@ light_theme_css = """
 <style>
 header{visibility:hidden;}
 ._terminalButton_rix23_138{visibility:hidden;}
+._container_gzau3_1, ._viewerBadge_nim44_23{visibility:hidden;}
 
 /* Overall background and text color */
 .stApp {
