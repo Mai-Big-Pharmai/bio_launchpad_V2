@@ -68,7 +68,7 @@ st.markdown(light_theme_css, unsafe_allow_html=True)
 
 # Title and Introduction and Logo image
 image = Image.open("assets/big-pharmai-logo.png")
-st.image(image, caption="Big Pharmai logo")
+st.image(image)
 st.title("BADDIE Agent Resource Hub")
 st.markdown("### The De Facto Agent Framework for Biology")
 st.write("""
