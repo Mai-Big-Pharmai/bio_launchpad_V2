@@ -3,9 +3,8 @@ import streamlit as st
 
 # uploaded_image = st.file_uploader("/assets/big-pharmai-logo.png", type=["png", "jpg", "jpeg"])
 
-if uploaded_image is not None:
-    image = Image.open("assets/big-pharmai-logo.png")
-    st.image(image, caption="Big Pharmai logo")
+image = Image.open("assets/big-pharmai-logo.png")
+st.image(image, caption="Big Pharmai logo")
 
 # Page configuration with a professional look.
 st.set_page_config(page_title="Bio Agent Launchpad", layout="wide", initial_sidebar_state="auto")
