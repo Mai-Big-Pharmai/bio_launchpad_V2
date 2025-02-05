@@ -7,6 +7,7 @@ st.set_page_config(page_title="Bio Agent Launchpad", layout="wide", initial_side
 light_theme_css = """
 <style>
 header{visibility:hidden;}
+footer{visibility:hidden;}
 ._terminalButton_rix23_138{visibility:hidden;}
 ._container_gzau3_1, ._viewerBadge_nim44_23{visibility:hidden;}
 
@@ -36,6 +37,16 @@ a {
     background-color: #fffcf2 !important;
 }
 </style>
+
+<script>
+// To break out of iframe and access the parent window
+const streamlitDoc = window.parent.document;
+
+// Make the replacement
+document.addEventListener("DOMContentLoaded", function(event){
+        streamlitDoc.querySelector("._container_gzau3_1")[0].innerHTML = "Provided by <a href='https://bigpharm.ai' target='_blank' class='css-z3au9t egzxvld2'>Big Pharmai</a>";
+    });
+</script>
 """
 
 # Inject custom CSS for a dark theme.
