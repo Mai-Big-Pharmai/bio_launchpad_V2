@@ -1,9 +1,11 @@
+from PIL import Image
 import streamlit as st
 
-# uploaded_image = st.file_uploader("Choose an image...", type=["png", "jpg", "jpeg"])
+uploaded_image = st.file_uploader("/assets/big-pharmai-logo.png", type=["png", "jpg", "jpeg"])
 
-# if uploaded_image is not None:
-#     image = Image.open(uploaded_image)
+if uploaded_image is not None:
+    image = Image.open(uploaded_image)
+    st.image(image, caption="Mai Big Pharmai")
 
 # Page configuration with a professional look.
 st.set_page_config(page_title="Bio Agent Launchpad", layout="wide", initial_sidebar_state="auto")
@@ -71,7 +73,7 @@ a {
 st.markdown(light_theme_css, unsafe_allow_html=True)
 
 # Title and Introduction
-st.image("assets/big-pharmai-logo.png", caption="Mai Big Pharmai")
+# st.image(image, caption="Mai Big Pharmai")
 st.title("BADDIE Agent Resource Hub")
 st.markdown("### The De Facto Agent Framework for Biology")
 st.write("""
