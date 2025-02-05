@@ -1,7 +1,42 @@
 import streamlit as st
 
+# uploaded_image = st.file_uploader("Choose an image...", type=["png", "jpg", "jpeg"])
+
+# if uploaded_image is not None:
+#     image = Image.open(uploaded_image)
+
 # Page configuration with a professional look.
 st.set_page_config(page_title="Bio Agent Launchpad", layout="wide", initial_sidebar_state="auto")
+
+light_theme_css = """
+<style>
+/* Overall background and text color */
+.stApp {
+    background-color: #efefef;
+    color: #121212;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #121212;
+}
+
+/* Links */
+a {
+    color: #1e90ff;
+}
+
+/* Markdown paragraphs */
+.stMarkdown p {
+    color: #121212;
+}
+
+/* Ensure sidebar and other elements follow the dark theme */
+.css-1d391kg, .css-18e3th9 {
+    background-color: #efefef !important;
+}
+</style>
+"""
 
 # Inject custom CSS for a dark theme.
 dark_theme_css = """
@@ -33,10 +68,10 @@ a {
 }
 </style>
 """
-st.markdown(dark_theme_css, unsafe_allow_html=True)
+st.markdown(light_theme_css, unsafe_allow_html=True)
 
 # Title and Introduction
-st.image("https://pbs.twimg.com/profile_images/1879918891008212992/xpHSEiro_400x400.jpg", caption="Mai Big Pharmai")
+st.image("./assets/big-pharmai-logo.png", caption="Mai Big Pharmai")
 st.title("BADDIE Agent Resource Hub")
 st.markdown("### The De Facto Agent Framework for Biology")
 st.write("""
