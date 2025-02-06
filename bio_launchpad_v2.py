@@ -94,7 +94,7 @@ a {
 st.markdown(light_theme_css, unsafe_allow_html=True)
 
 # Title and Introduction and Logo image
-image = Image.open("/workspace/assets/big-pharmai-logo2.png")
+image = Image.open("/root/bio_launchpad_V2/assets/big-pharmai-logo2.png")
 # resized_image = image.resize((800,150))
 st.image(image)
 st.title("BADDIE Agent Resource Hub")
