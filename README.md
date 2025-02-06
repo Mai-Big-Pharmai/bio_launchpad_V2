@@ -16,6 +16,8 @@ git clone git@github.com:Mai-Big-Pharmai/bio_launchpad_V2.git
  - navigate into bio_launchpad_v2/ directory
  - run the following command to start server
     ```bash
+    cd /root/bio_launchpad_v2
+    source venv/bin/activate
     streamlit run bio_launchpad_v2.py --server.port 443 --server.sslCert /root/ssl-cert/ssl/cert.pem --server.sslKeyfile /root/ssl-cert/ssl/privatekey.pem --server.headless true
     ```
 
