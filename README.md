@@ -6,7 +6,7 @@ Documentation website for Big Pharmai BADDIE framework going over used libraries
 ## Installation
 Clone Github repository [here](https://github.com/Mai-Big-Pharmai/bio_launchpad_V2)
 
-#####SSH connection
+##### SSH connection
 ```bash
 git clone git@github.com:Mai-Big-Pharmai/bio_launchpad_V2.git
 ```
